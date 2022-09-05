@@ -17,7 +17,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Dashboard');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -39,6 +39,7 @@ $routes->get('/', 'Dashboard::index',['filter' => 'auth']);
 
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 $routes->get('/profile', 'Profile::index', ['filter' => 'auth']);
+$routes->get('/firebase', 'Firebase::index', ['filter' => 'auth']);
 $routes->get('/logout', 'Login::logout', ['filter => auth']);
 
 $routes->get('/login', 'Login::index');

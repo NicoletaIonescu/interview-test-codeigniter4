@@ -34,6 +34,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?=base_url('/profile');?>">Profile</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?=base_url('/firebase');?>">Firebase</a>
+                </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="<?=base_url('/logout');?>" >Logout</a>
                 </li>
